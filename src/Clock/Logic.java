@@ -54,16 +54,16 @@ public class Logic extends JFrame{
         return hour+":"+minute+":"+second;        
     }
     
-    private class Listener implements ActionListener
-    {
-
-        @Override
-        public void actionPerformed(ActionEvent ae) 
-        {
-            time.setText(getTheTime());
-        }
-        
-    }
+//    private class Listener implements ActionListener
+//    {
+//
+//        @Override
+//        public void actionPerformed(ActionEvent ae) 
+//        {
+//            time.setText(getTheTime());
+//        }
+//        
+//    }
     
     
 }
