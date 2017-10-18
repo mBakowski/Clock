@@ -12,7 +12,7 @@ public class Logic extends JFrame{
     JPanel clockPanel = new JPanel();
     JLabel label = new JLabel("Czas:");
     JLabel time = new JLabel(getTheTime());
-   
+ 
     
     public Logic()
     {
@@ -29,6 +29,7 @@ public class Logic extends JFrame{
         clockPanel.add(time);
         
         ActionListener clock = new Listener();
+        
         Timer timer = new Timer(1000,clock);
         timer.start();
         
