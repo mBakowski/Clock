@@ -2,7 +2,6 @@
 package Clock;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -27,9 +26,9 @@ public class Logic extends JFrame{
         this.getContentPane().add(clockPanel);
         clockPanel.add(label);
         clockPanel.add(time);
-        
-        
+                
         ActionListener clock = new Listener(this);
+        
         Timer timer = new Timer(1000,clock);
         timer.start();
         
@@ -53,17 +52,5 @@ public class Logic extends JFrame{
         
         return hour+":"+minute+":"+second;        
     }
-    
-//    private class Listener implements ActionListener
-//    {
-//
-//        @Override
-//        public void actionPerformed(ActionEvent ae) 
-//        {
-//            time.setText(getTheTime());
-//        }
-//        
-//    }
-    
-    
+   
 }
