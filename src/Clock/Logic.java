@@ -28,8 +28,8 @@ public class Logic extends JFrame{
         clockPanel.add(label);
         clockPanel.add(time);
         
-        ActionListener clock = new Listener();
         
+        ActionListener clock = new Listener(this);
         Timer timer = new Timer(1000,clock);
         timer.start();
         
